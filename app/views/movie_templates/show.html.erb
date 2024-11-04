@@ -9,19 +9,19 @@
 </div>
 
 <div>
-<a href="/delete_movie/<%=the_movie.id%>">
+<a href="/delete_movie/<%=@the_movie.id%>">
  Delete movie 
 </a>
 </div>
 
 <hr>
-<form action="/modify_movie/<%=the_movie.id%>" method="post">
+<form action="/modify_movie/<%=@the_movie.id%>" method="post">
   <div>
     <label for="title_box">
       Title
     </label>
 
-    <input type="text" id="title_box" name="the_title" value = "<%=the_movie.title%>">
+    <input type="text" id="title_box" name="the_title" value = "<%=@the_movie.title%>">
   </div>
 
   <div>
@@ -29,7 +29,7 @@
       Year
     </label>
 
-    <input type="text" id="year_box" name="the_year" value = "<%=the_movie.year%>">
+    <input type="text" id="year_box" name="the_year" value = "<%=@the_movie.year%>">
   </div>
 
   <div>
@@ -37,7 +37,7 @@
       Duration
     </label>
 
-    <input type="text" id="duration_box" name="the_duration" value = "<%=the_movie.duration%>">
+    <input type="text" id="duration_box" name="the_duration" value = "<%=@the_movie.duration%>">
   </div>
 
   <div>
@@ -45,7 +45,7 @@
       Description
     </label>
 
-    <input type = "text" id="description_box" name="the_description" rows="3" value = "<%=the_movie.description%>"> 
+    <input type = "text" id="description_box" name="the_description" rows="3" value = "<%=@the_movie.description%>"> 
   </div>
 
   <div>
@@ -53,7 +53,7 @@
       Image
     </label>
 
-    <input type="text" id="image_box" name="the_image" value = "<%=the_movie.image%>">
+    <input type="text" id="image_box" name="the_image" value = "<%=@the_movie.image%>">
   </div>
 
   <div>
@@ -61,7 +61,7 @@
       Director ID
     </label>
 
-    <input type="text" id="director_id_box" name="the_director_id" value = "<%=the_movie.director_id%>">
+    <input type="text" id="director_id_box" name="the_director_id" value = "<%=@the_movie.director_id%>">
   </div>
 
   <button>
@@ -115,7 +115,7 @@
     Director
   </dt>
   <dd>
-  <%dir_id = the_movie.director_id%>
+  <%dir_id = @the_movie.director_id%>
 
   </dd>
 

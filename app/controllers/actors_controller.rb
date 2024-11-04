@@ -32,7 +32,7 @@ class ActorsController < ApplicationController
 
 the_actor = matching_actors.at(0)
 the_actor.destroy
-redirect_to("/movies")
+redirect_to("/actors")
   end
 
   def update

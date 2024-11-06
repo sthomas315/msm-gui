@@ -57,7 +57,7 @@ redirect_to("/directors")
     the_director.dob = params.fetch("the_dob")
     the_director.image = params.fetch("the_image")
     
-  
+    the_director.save 
     redirect_to("/directors/#{the_director.id}")
   end
 

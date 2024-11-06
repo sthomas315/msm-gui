@@ -52,14 +52,13 @@ redirect_to("/directors")
     d_id = params.fetch("the_id")
     matching_directors = Director.where({:id => d_id})
     the_director = matching_directors.at(0)
-  
 
     the_director.name = params.fetch("the_name")
     the_director.dob = params.fetch("the_dob")
     the_director.image = params.fetch("the_image")
     
   
-    redirect_to("/director/#{the_director.id}")
+    redirect_to("/directors/#{the_director.id}")
   end
 
 end

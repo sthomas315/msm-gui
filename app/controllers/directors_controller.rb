@@ -30,11 +30,11 @@ class DirectorsController < ApplicationController
 
   def create
     d = Director.new
-    a.name = params.fetch("the_name")
-    a.dob = params.fetch("the_dob")
-    a.image = params.fetch("the_image")
+    d.name = params.fetch("the_name")
+    d.dob = params.fetch("the_dob")
+    d.image = params.fetch("the_image")
 
-    a.save
+    d.save
 
     redirect_to("/directors")
   end
